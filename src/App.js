@@ -12,17 +12,17 @@ return React.createElement("div", {}, [
     React.createElement(Pet, {
             name: "Luna",
             animal: "Dog",
-            breed: "Golden Retriever"
+            breed: "Golden Retriever",
         }),
         React.createElement(Pet, {
             name: "Pepper",
             animal: "Bird",
-            breed: "Cockatiel"
+            breed: "Cockatiel",
         }),
         React.createElement(Pet, {
             name: "Doink",
             animal: "Cat",
-            breed: "Mix"
+            breed: "Mix",
         }),
     ]);
 };
