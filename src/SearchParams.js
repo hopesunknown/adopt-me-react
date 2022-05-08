@@ -8,7 +8,7 @@ const SearchParams = () => {
         <div className="search-params">
             <form>
                 <label htmlFor="location">
-                    Location
+                    Location {location}
                     <input 
                         id="location" 
                         value={location} 
