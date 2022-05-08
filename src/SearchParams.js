@@ -3,6 +3,7 @@ import { useState } from 'react';
 const SearchParams = () => {
     // const location = "Seattle, WA";
     const [location, setLocation] = useState("");
+    const [animal, setAnimal] = useState("");
 
     return (
         <div className="search-params">
