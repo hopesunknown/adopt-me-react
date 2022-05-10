@@ -36,9 +36,9 @@ const breeds = ["poodle", "bichon"]
                         }}
                         >
                          <option />
-                         {ANIMALS.map((animal) => (
-                                 <option key={animal} value={animal}>
-                                     {animal}
+                         {ANIMALS.map((oneAnimal) => (
+                                 <option key={oneAnimal} value={oneAnimal}>
+                                     {oneAnimal}
                                  </option>
                              ))}   
                         </select>
