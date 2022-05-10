@@ -5,6 +5,9 @@ const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
 const SearchParams = () => {
     const [location, setLocation] = useState("");
     const [animal, setAnimal] = useState("");
+    const [breed, setBreed] = useState("");
+
+const breeds = []
 
     return (
         <div className="search-params">
