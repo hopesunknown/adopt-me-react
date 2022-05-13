@@ -10,6 +10,10 @@ const SearchParams = () => {
     const breeds = [];
     const [pets, setPets] = useState([]);
 
+    const petHook = useState([]);
+    const pets = petHook[0];
+    const setPets = petHook[1];
+
     useEffect(() => {
         requestPets();
     }, []);
