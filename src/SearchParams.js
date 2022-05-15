@@ -11,12 +11,6 @@ const SearchParams = () => {
     const [breeds] = useBreedList(animal);
     const [pets, setPets] = useState([]);
 
-    // const petHook = useState([]);
-    // const pets = petHook[0];
-    // const setPets = petHook[1];
-
-    // const { pet: state, setPet: setState } = useState("");
-
     useEffect(() => {
         requestPets();
     }, []);
@@ -32,7 +26,12 @@ const SearchParams = () => {
 
     return (
         <div className="search-params">
-            <form>
+            <form
+                onSubmit={e => {
+                    e.preventDefault();
+                    requestPets();
+                }}
+            >
                 <label htmlFor="location">
                     Location {location}
                     <input 
