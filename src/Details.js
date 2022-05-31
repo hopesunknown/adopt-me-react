@@ -19,7 +19,11 @@ class Details extends Component {
         );
         const json = await res.json();
 
-        this.setState(Object.assign({ loading: false }, json.pets[0]));
+        setTimeout(function () {
+            console.log(this.state);
+        }, 1)
+
+        this.setState({ loading: false, ...json.pets[0] });
     }
 
     render() {
