@@ -42,4 +42,9 @@ class Details extends Component {
     }
 }
 
+const WrappedDetails = () => {
+    const params = useParams();
+    return <Details params={params} />;
+};
+
 export default Details;
