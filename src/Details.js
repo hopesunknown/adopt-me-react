@@ -19,10 +19,6 @@ class Details extends Component {
         );
         const json = await res.json();
 
-        setTimeout(function () {
-            console.log(this.state);
-        }, 1)
-
         this.setState({ loading: false, ...json.pets[0] });
     }
 
@@ -51,4 +47,4 @@ const WrappedDetails = () => {
     return <Details params={params} />;
 };
 
-export default Details;
+export default WrappedDetails;
