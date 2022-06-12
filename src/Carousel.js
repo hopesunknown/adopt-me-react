@@ -9,8 +9,8 @@ class Carousel extends Component {
     images: ["http://pets-images.dev-apis.com/pets/none.jpg"],
   };
 
-  handleIndexClick (event) {
-
+  handleIndexClick(event) {
+    console.log(this);
   }
 
   render() {
