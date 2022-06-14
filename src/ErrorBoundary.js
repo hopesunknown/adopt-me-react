@@ -10,4 +10,15 @@ class ErrorBoundary extends Component {
   componentDidCatch(error, info) {
     console.error(error, info);
   }
+
+  render () {
+    if (this.state.hasError) {
+      return (
+        <h2>
+          There was an error. Oops.
+          <Link>Click here</Link> to go back to the homepage.
+        </h2>
+      );
+    }
+  }
 }
