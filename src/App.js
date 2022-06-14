@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Details from "./Details";
 
 const App = () => {
+  const themeColor = "brown";
   return (
     <StrictMode>
       <BrowserRouter>
