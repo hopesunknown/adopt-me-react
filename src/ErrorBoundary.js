@@ -3,13 +3,14 @@ import { Link, Navigate } from 'react-router-dom';
 
 class ErrorBoundary extends Component {
   state = { hasError: false, redirect: false };
+
   static getDerivedStateFromError() {
     return { hasError: true }
   }
 
-  componentDidCatch(error, info) {
-    console.error(error, info);
-  }
+  // componentDidCatch(error, info) {
+  //   console.error(error, info);
+  // }
 
   componentDidUpdate() {
     if (this.state.hasError) {
