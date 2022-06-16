@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import Results from "./Results";
 import useBreedList from "./useBreedList";
+import ThemeContext from "./ThemeContext";
 
 const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
 
@@ -10,6 +11,7 @@ const SearchParams = () => {
   const [breed, updateBreed] = useState("");
   const [pets, setPets] = useState([]);
   const [breeds] = useBreedList(animal);
+  const [theme] = useContext(ThemeContext);
 
   useEffect(() => {
     requestPets();
