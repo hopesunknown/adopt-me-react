@@ -1,11 +1,12 @@
 import { render } from "react-dom";
 import SearchParams from "./SearchParams";
 import { StrictMode } from "react";
+import ThemeContext from './ThemeContext';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Details from "./Details";
 
 const App = () => {
-  const themeColor = "brown";
+  const themeColor = useState('deeppink');
   return (
     <StrictMode>
       <BrowserRouter>
