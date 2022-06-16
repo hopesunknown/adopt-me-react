@@ -1,5 +1,7 @@
-import { createContext } from 'react-dom';
+import { createContext } from 'react';
 
 // const [theme, setTheme] = useState('darkblue');
 
-const ThemeContext = createContext('brown')
+const ThemeContext = createContext(['#f06d06', () => {}]);
+
+export default ThemeContext;
