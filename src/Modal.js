@@ -8,4 +8,9 @@ const Modal ({ children }) => {
   if (!elementRef.current) {
     elementRef.current = document.createElement('div');
   }
+
+  useEffect(() => {
+    const modalRoot = document.getElementById('modal');
+    modalRoot.appendChild(elementRef.current);
+  }, []);
 }
