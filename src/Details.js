@@ -25,7 +25,7 @@ class Details extends Component {
 
     // throw new Error("lmao you crashed");
 
-    const { animal, breed, city, state, description, name, images, showModal } =
+    const {animal, breed, city, state, description, name, images, showModal} =
       this.state;
 
     return (
@@ -44,19 +44,17 @@ class Details extends Component {
             )}
           </ThemeContext.Consumer>
           <p>{description}</p>
-          {
-            showModal ? (
-              <Modal>
-                <div>
-                  <h1>Would you like to adopt {name}?</h1>
-                  <div className='buttons'>
-                    <a href='https://bit.ly/pet-adopt'>Yes</a>
-                    <button onClick={this.toggleModal}>No</button>
-                  </div>
+          {showModal ? (
+            <Modal>
+              <div>
+                <h1>Would you like to adopt {name}?</h1>
+                <div className='buttons'>
+                  <a href='https://bit.ly/pet-adopt'>Yes</a>
+                  <button onClick={this.toggleModal}>No</button>
                 </div>
-              </Modal>
-            ) : null
-          }
+              </div>
+            </Modal>
+          ) : null}
         </div>
       </div>
     );
