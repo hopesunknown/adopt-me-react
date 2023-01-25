@@ -1,7 +1,7 @@
-import { useEffect, useRef } from 'react';
-import { createPortal } from 'react-dom';
+import {useEffect, useRef} from 'react';
+import {createPortal} from 'react-dom';
 
-const Modal = ({ children }) => {
+const Modal = ({children}) => {
   const elementRef = useRef(null);
   if (!elementRef.current) {
     elementRef.current = document.createElement('div');

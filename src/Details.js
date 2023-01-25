@@ -6,7 +6,7 @@ import ThemeContext from "./ThemeContext";
 import Modal from './Modal';
 
 class Details extends Component {
-  state = { loading: true };
+  state = {loading: true};
 
   async componentDidMount() {
     const res = await fetch(
@@ -25,8 +25,7 @@ class Details extends Component {
 
     // throw new Error("lmao you crashed");
 
-    const {animal, breed, city, state, description, name, images, showModal} =
-      this.state;
+    const {animal, breed, city, state, description, name, images, showModal} = this.state;
 
     return (
       <div className="details">
